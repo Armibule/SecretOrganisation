@@ -1,7 +1,11 @@
-<html>
-  <head>
+<html><head>
     <title>Organisation's website</title>
-    <style type="text/css">
+    
+  <style>
+
+  * {
+    box-sizing: border-box;
+  }
   
   body {
     display: flex;
@@ -17,12 +21,13 @@
   #main {
     display: flex;
     background: #334;
-    width: 80%;
+    width: 90%;
     height: 80%;
     border-radius: 20px;
     box-shadow: 0 2px 4px black;
     outline: solid 2px #0ff2;
     padding: 20px 40px;
+    flex-direction: column;
   }
   
   .secret {
@@ -30,11 +35,22 @@
     user-select: none;
     pointer-events: none;
   }
-</style>
-  </head>
+  
+  ul, p {
+    font-size: 1.3em;
+  }
+</style></head>
   <body>
-    <div id="main" class="secret">
-      <h1>Salut</h1>
-    </div>
-  </body>
+    <div id="main" class="secrett">
+      <h1>Organisation's super secret website</h1>
+    <h2>Our news</h2><ul><li>🗒 Our next plan will soon be revealed tomorrow, be ready !</li><li>
+  🚔 How to not get caught by the police, the 3-step tutorial...
+</li><li>
+  🍌How to make delicious banana splits !
+</li></ul><h2>Where are our headquarters located ?</h2><p>
+  If you got to this page, you either are a member of our organisation or a very talented student !
+  In this case, we hope you can join us and meet us in the ...
+</p></div>
+  
+</body>
 </html>
