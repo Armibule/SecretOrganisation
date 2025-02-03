@@ -2,6 +2,7 @@
   <head>
     <title>Organisation's website</title>
     <style type="text/css">
+  
   body {
     display: flex;
     background: #111115;
@@ -9,6 +10,8 @@
     align-items: center;
     justify-content: center;
     margin: 0;
+    color: white;  
+    font-family: "arial";
   }
   
   #main {
@@ -19,10 +22,19 @@
     border-radius: 20px;
     box-shadow: 0 2px 4px black;
     outline: solid 2px #0ff2;
+    padding: 20px 40px;
+  }
+  
+  .secret {
+    filter: blur(10px);
+    user-select: none;
+    pointer-events: none;
   }
 </style>
   </head>
   <body>
-    <div id="main"></div>
+    <div id="main" class="secret">
+      <h1>Salut</h1>
+    </div>
   </body>
 </html>
