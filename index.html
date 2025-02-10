@@ -21,8 +21,8 @@
   #main {
     display: flex;
     background: #334;
-    width: 90%;
-    height: 80%;
+    width: 92%;
+    height: 85%;
     border-radius: 20px;
     box-shadow: 0 2px 4px black;
     outline: solid 2px #0ff2;
@@ -36,23 +36,23 @@
     pointer-events: none;
   }
   
-  ul, p {
-    font-size: 1.3em;
+  ul, p, math {
+    font-size: 1.3rem;
   }
 </style></head>
   <body>
     <div id="main" class="secret">
       <h1>Organisation's super secret website</h1>
-    <h2>Our news</h2><ul><li>🗒 Our next plan will soon be revealed tomorrow, be ready !</li><li>
+    <h2>Our news 📰</h2><ul><li>🗒 Our next plan will soon be revealed tomorrow, be ready !</li><li>
   🚔 How to not get caught by the police, the 3-step tutorial...
 </li><li>
   🍌How to make delicious banana splits !
-</li></ul><h2>Where are our headquarters located ?</h2><p>
+</li></ul><h2>Where are our headquarters located ? 🌍</h2><p>
   If you got to this page, you either are a member of our organisation or a very talented student !
-  In this case, we hope you can join us and meet us in the ...
-</p></div>
-
-<script>
+  In this case, we hope you can join us and meet us in the CDI !<br>
+  To show you deserve it, solve this equation and go to the shelf coresponding to <math>ABC</math>
+</p><math>A + B = 0</math><math>B + C = 0</math><math>C + A = 0</math></div>
+  <script>
     function stringToHash(string) {
     let hash = 0;
 
@@ -83,6 +83,6 @@ const page = document.getElementById("main")
 page.classList.remove("secret")
 
 </script>
-  
-</body>
-</html>
+
+
+</body></html>
