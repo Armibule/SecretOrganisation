@@ -51,6 +51,38 @@
   If you got to this page, you either are a member of our organisation or a very talented student !
   In this case, we hope you can join us and meet us in the ...
 </p></div>
+
+<script>
+    function stringToHash(string) {
+    let hash = 0;
+
+    if (string.length == 0) return hash;
+
+    for (i = 0; i < string.length; i++) {
+        char = string.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        hash = hash & hash;
+    }
+    return hash;
+}
+
+
+var password = ""
+const passwordHash = 579303016;
+
+while (stringToHash(password) != passwordHash) {
+	password = prompt("Enter the password to access our secret website 🔐\n\n(Don't refuse future dialogs or else the website will crash)") 
+	
+	if (password == null) {
+		password = ""
+	}
+}
+
+
+const page = document.getElementById("main")
+page.classList.remove("secret")
+
+</script>
   
 </body>
 </html>
